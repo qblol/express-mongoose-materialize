@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Qblol</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <!-- START NAVBAR -->
+  <div class="navbar-fixed">
+    <nav class="blue accent-4">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Qblol</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/vue.js"></script>
+  <!-- <script src="http://maps.google.com/maps/api/js"></script>
+  <script src="js/gmaps.js"></script>
+  <script src="js/init.js"></script> -->
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('.modal').modal();
+    $('ul.tabs').tabs();
+    $('.modal-trigger').leanModal({ready: function() {
+      $('ul.tabs').tabs('select_tab', 'test1');
+    }});
+  });
+
+  </script>
+</body>
+</html>
